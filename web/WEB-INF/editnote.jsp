@@ -18,13 +18,18 @@
         <br>
         <form method="post" action="note">
         <label>Title:</label>
-            <input type="text" name="title" value="${Note.title}" id="title"> 
+            <input type="text" name="title" value="${note.title}" > 
             <br>
              <label>Contents:</label>
-             <textarea name="content" value="${Note.content}" id="content"> </textarea>
+             <textarea name="content" value="${note.content}"> </textarea>
              <br>
              <input type="submit" value="Save">
             
         </form>
+               <!-- Display message only if validation has been tripped. -->
+        <%-- Display message only if validation has been tripped. --%>
+        <c:if test="${invalid}">
+            <p>Invalid entry. Please enter your not.</p>
+        </c:if>
     </body>
 </html>

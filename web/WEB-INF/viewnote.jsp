@@ -16,9 +16,9 @@
         <br>
         <h2>View Note</h2>
         <br>
-        <p> Title: ${Note.title}</p>
+        <p> Title: ${note.title}</p>
         <br>
-        <p> Contents: ${Note.content}</p>
+        <p> Contents: ${note.content}</p>
         <br>
         <a href="note?editnote.jsp">Edit</a>
 
