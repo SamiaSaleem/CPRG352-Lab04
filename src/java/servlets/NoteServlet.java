@@ -62,6 +62,10 @@ public class NoteServlet extends HttpServlet {
         BufferedReader br = new BufferedReader(new FileReader(new File(path)));
         // to write to a file
         PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(path, false))); 
+                pw.print(title);
+                pw.print(content);
+                pw.close();
+
 
     }
 
